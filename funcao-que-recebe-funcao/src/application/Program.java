@@ -22,7 +22,7 @@ public class Program {
         
         ProductService ps = new ProductService();
 
-        double sum = ps.filterSum(list);
+        double sum = ps.filterSum(list, p -> p.getName().charAt(0) == 'T');
 
         System.out.println(" Sum = " + String.format("%.2f", sum));
 	
